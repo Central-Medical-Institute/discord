@@ -1,0 +1,10 @@
+const botclient = require("./bot");
+const config = require("./config.json");
+
+const bot = new botclient(config);
+
+bot.color = require('./colors.js');
+
+bot.emoji = require('./emojis.js');
+
+bot.start();
